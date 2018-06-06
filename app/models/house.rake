@@ -1,5 +1,5 @@
 
-class House < ApplicationRecord::Base
+class House < ActiveRecord::Base
   validates :address, presence: true
 
   has_many :residents,

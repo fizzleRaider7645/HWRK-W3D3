@@ -1,5 +1,5 @@
 
-class Person < ApplicationRecord::Base
+class Person < ActiveRecord::Base
   validates :name, :house, presence: true
 
   belongs_to :house,
