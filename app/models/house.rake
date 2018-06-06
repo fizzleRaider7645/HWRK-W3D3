@@ -1,7 +1,7 @@
 
-class House < ApplicationRecord
+class House < ApplicationRecord::Base
   validates :address, presence: true
-  
+
   has_many :residents,
     primary_key: :id,
     foreign_key: :house_id,
